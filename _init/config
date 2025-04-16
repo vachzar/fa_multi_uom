@@ -1,0 +1,10 @@
+Package: multi_uom
+Version: 2.4.0-3
+Description: Support for multiple unit of measure for stock items
+Author: Vachzar
+Maintenance: Vachzar
+Homepage: http://kofa.nex.sh
+Depends:
+InstallPath: modules/multi_uom
+Type: extension
+Filename: multi_uom-2.4.0-3
