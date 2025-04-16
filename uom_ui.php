@@ -114,5 +114,4 @@ while ($row = db_fetch_assoc($result)) {
     end_row();
 }
 end_table();
-
 end_page();

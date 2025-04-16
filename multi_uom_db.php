@@ -34,3 +34,11 @@ function update_uom_conversion($id, $stock_id, $base_uom, $alt_uom, $conversion_
             WHERE id = " . db_escape($id);
     db_query($sql, "Gagal memperbarui konversi UOM");
 }
+
+function get_alternative_uoms_for_item($stock_id)
+{
+    $sql = "SELECT alt_uom, conversion_rate 
+            FROM item_uom_conversion 
+            WHERE stock_id = " . db_escape($stock_id);
+    return db_query($sql, "Gagal ambil satuan alternatif");
+}
